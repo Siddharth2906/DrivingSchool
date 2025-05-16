@@ -7,21 +7,21 @@ import { useOutletContext } from 'react-router-dom';
 const testimonials = [
     {
       id: 1,
-      content: "Dolores sed duo clita tempor justo dolor et stet lorem kasd labore dolore lorem ipsum. At lorem lorem magna ut et, nonumy et labore et tempor diam tempor erat.",
+      content: "I had an excellent experience with Priyanshi Driving School ! The instructors were patient, professional, and extremely knowledgeable.",
       name: "Client Name",
       profession: "Profession",
       image: img1
     },
     {
       id: 2,
-      content: "Dolores sed duo clita tempor justo dolor et stet lorem kasd labore dolore lorem ipsum. At lorem lorem magna ut et, nonumy et labore et tempor diam tempor erat.",
+      content: "What I appreciated most was how they tailored the lessons to my learning pace. The cars were clean and well-maintained, and scheduling classes was easy and flexible. ",
       name: "Client Name",
       profession: "Profession",
       image: img2
     },
     {
       id: 3,
-      content: "Dolores sed duo clita tempor justo dolor et stet lorem kasd labore dolore lorem ipsum. At lorem lorem magna ut et, nonumy et labore et tempor diam tempor erat.",
+      content: "I highly recommend Priyanshi Driving School to anyone looking to learn how to drive safely and confidently. Thank you for making this journey so smooth and enjoyable!",
       name: "Client Name",
       profession: "Profession",
       image:img3
@@ -56,11 +56,11 @@ const Testimonal = () => {
      <div className="max-w-2xl w-full">
        <div className="relative">
          <div className="text-center">
-           <div className="relative mb-6">
+           <div className="relative mb-8">
              <img 
                src={testimonials[currentTestimonial].image} 
                alt={testimonials[currentTestimonial].name} 
-               className="rounded-full mx-auto w-30 h-30"
+               className="rounded-full mx-auto w-35 h-35"
              />
              <div className="absolute top-full left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex items-center justify-center bg-white rounded-full shadow-md" style={{ width: '60px', height: '60px' }}>
                <MessageCircle size={24} className="text-blue-600" />
