@@ -12,7 +12,9 @@ const courses = [
       price: "360 rupees",
       description: "Learn to drive without the stress of gear shifting. Our automatic car lessons are perfect for beginners and those who prefer a smooth, hassle-free driving experience",
       level: "Beginner",
-      duration: "3 Week",
+      duration: "10 days",
+      adv_level:"Advanced",
+      adv_duration:"20 days",
       image: course1
     },
     {
@@ -21,7 +23,9 @@ const courses = [
       price: "360 rupees",
       description: "Gain confidence driving at higher speeds and managing traffic on highways. Our expert instructors will train you on safe lane changing, overtaking, and long-distance driving.",
       level: "Beginner",
-      duration: "3 Week",
+      duration: '10 days',
+       adv_level:"Advanced",
+      adv_duration:"20 days",
       image: course2
     },
     {
@@ -30,7 +34,9 @@ const courses = [
       price: "360 rupees",
       description: "New to two-wheelers? We provide step-by-step training for riding scooters (scooty) and motorbikes, focusing on balance, safety, and road awareness for urban and rural roads.",
       level: "Beginner",
-      duration: "3 Week",
+      duration: "10 days",
+      adv_level:"Advanced",
+      adv_duration:"20 days",
       image: course3
     }
   ];
@@ -50,12 +56,10 @@ const Courses = () => {
           {courses.map(course => (
             <div key={course.id} className={`${context.darkMode ? 'bg-gray-900 text-white' : 'bg-white text-gray-900'} rounded-xl p-6 shadow-lg shadow-blue-500/10 border border-gray-700 hover:shadow-blue-500/20 transition-all duration-300 flex flex-col h-full overflow-hidden`}>
               <div className="text-center p-4 pt-0">
-                <div className="inline-block bg-blue-600 text-white text-xl py-2 w-full mb-4 -mt-2">
-                  {course.price}
-                </div>
+                
                 <h5 className="text-xl font-bold mb-3">{course.title}</h5>
                 <p>{course.description}</p>
-                <div className="flex justify-center mt-2 mb-0">
+                <div className="flex justify-center mt-2 mb-2">
                   <div className="flex items-center mr-4">
                     <i className="fas fa-signal text-blue-600 mr-2"></i>
                     <small>{course.level}</small>
@@ -65,9 +69,19 @@ const Courses = () => {
                     <small>{course.duration}</small>
                   </div>
                 </div>
+                <div className="flex justify-center mt-2 mb-0">
+                  <div className="flex items-center mr-4">
+                    <i className="fas fa-signal text-red-600 mr-2"></i>
+                    <small>{course.adv_level}</small>
+                  </div>
+                  <div className="flex items-center">
+                    <i className="fas fa-calendar-alt text-red-600 mr-2"></i>
+                    <small>{course.adv_duration}</small>
+                  </div>
+                </div>
               </div>
               <div className="relative mt-auto">
-                <img src={course.image} alt={course.title} className="w-full  " style={{ maxHeight: '400px' }}/>
+                <img src={course.image} alt={course.title} className="w-full " style={{ maxHeight: '400px' }}/>
                 <div className="absolute inset-0 bg-gradient-to-b from-[rgba(255,255,255,0)] to-[rgba(0,0,255,0.5)] bg-opacity-40 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity">
                   <a href="#" className="border-2 border-white text-white py-2 px-4 rounded hover:bg-white hover:text-gray-800 transition-colors">
                     Read More

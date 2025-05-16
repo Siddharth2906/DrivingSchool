@@ -23,13 +23,7 @@ const Navbar = ( {darkMode,toggleDarkMode}) => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentSlide(prev => (prev + 1) % 2);
-    }, 5000);
-    return () => clearInterval(interval);
-  }, []);
-
+  
   const handleBackToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
@@ -48,20 +42,14 @@ const Navbar = ( {darkMode,toggleDarkMode}) => {
       <nav className= {` sticky top-0 z-40 shadow-md ${darkMode ? 'bg-gray-900 text-white' : 'bg-white text-gray-900'} `}>
         <div className="container mx-auto px-4">
           <div className="flex justify-between">
-            <a href="#" className="flex items-center border-r border-gray-200 py-4 px-4 lg:px-5">
+            <a href="#" className="flex items-center border-r border-gray-200 py-3 px-4 lg:px-5">
               <h2 className="text-2xl font-bold m-0">
-              <img src={logo} alt="" className='w-20 '/>
+              <img src={logo} alt="" className='lg:w-28 w-20'/>
               </h2>
             </a>
-            <button 
-              className="lg:hidden flex items-center py-4 px-4"
-              onClick={() => setIsNavOpen(!isNavOpen)}
-            >
-              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-              </svg>
-            </button>
-            <div className={`${isNavOpen ? 'block' : 'hidden'} lg:flex lg:items-center absolute lg:static top-full left-0 right-0 bg-white lg:bg-transparent shadow-md lg:shadow-none`}>
+           <div className='flex lg:gap-x-6'>
+           
+            <div className={`${isNavOpen ? 'block' : 'hidden'} ${darkMode ? ' bg-gray-900 text-white' : 'bg-white text-gray-900'} lg:flex lg:items-center absolute lg:static top-full left-0 right-0  lg:bg-transparent shadow-md lg:shadow-none`}>
               <div className="flex flex-col lg:flex-row p-4 lg:p-0">
                 <Link to="/" className='py-2 px-4 lg:px-4 hover:text-blue-800'>Home</Link>
              <Link to="/about" className='py-2 px-4 lg:px-4 hover:text-blue-800'>About</Link>
@@ -76,7 +64,7 @@ const Navbar = ( {darkMode,toggleDarkMode}) => {
                   </a>
                   <div className={`hidden group-hover:block absolute left-0 mt-2 ${darkMode ? ' bg-gray-900 text-white' : 'bg-white text-gray-900'} shadow-lg rounded-sm z-10 w-40`}>
                     <Link to="/features" className={`block px-4 py-2 ${darkMode ? '  text-white  hover:bg-gray-600 ' : 'text-gray-700 hover:bg-gray-100'}`}>Features</Link>
-                    <Link to="/cpntact-us" className={`block px-4 py-2 ${darkMode ? '  text-white  hover:bg-gray-600 ' : 'text-gray-700 hover:bg-gray-100'}`}>Appointment</Link>
+                    <Link to="/contact-us" className={`block px-4 py-2 ${darkMode ? '  text-white  hover:bg-gray-600 ' : 'text-gray-700 hover:bg-gray-100'}`}>Appointment</Link>
                     <Link to="/our-team" className={`block px-4 py-2 ${darkMode ? '  text-white  hover:bg-gray-600 ' : 'text-gray-700 hover:bg-gray-100'}`}>Our Team</Link>
                     <Link to="/testimonal" className={`block px-4 py-2 ${darkMode ? '  text-white  hover:bg-gray-600 ' : 'text-gray-700 hover:bg-gray-100'}`}>Testimonal</Link>
                     <Link to="/company" className={`block px-4 py-2 ${darkMode ? '  text-white  hover:bg-gray-600 ' : 'text-gray-700 hover:bg-gray-100'}`}>404 Page</Link>
@@ -85,9 +73,10 @@ const Navbar = ( {darkMode,toggleDarkMode}) => {
                 <Link to="/contact-us" className='py-2 px-4 lg:px-4 hover:text-blue-800'>Contact</Link>
               </div>
             </div>
+            
             <button 
           onClick={toggleDarkMode}
-          className={`h-15 w-15 my-auto rounded-full ${darkMode ? 'bg-gray-700 text-yellow-300' : 'bg-gray-200 text-gray-700'}  flex items-center justify-center transition-colors duration-300`}
+          className={` lg:h-15 lg:w-15  h-10 w-10 my-auto rounded-full ${darkMode ? 'bg-gray-700 text-yellow-300' : 'bg-gray-200 text-gray-700'}  flex items-center justify-center transition-colors duration-300`}
           aria-label="Toggle dark mode"
         >
           {darkMode ? (
@@ -96,6 +85,15 @@ const Navbar = ( {darkMode,toggleDarkMode}) => {
            <Moon className="text-blue-400 w-5 h-5" />
           )}
         </button>
+         <button 
+              className="lg:hidden flex items-center py-4 px-4"
+              onClick={() => setIsNavOpen(!isNavOpen)}
+            >
+              <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+            </button>
+        </div>
           </div>
         </div>
       </nav>

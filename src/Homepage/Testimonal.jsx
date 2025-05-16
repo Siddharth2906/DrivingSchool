@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { ChevronUp, MapPin, Clock, Phone, Facebook, Twitter, Linkedin, Instagram, Check, MessageCircle } from 'lucide-react';
 import img1 from "../img/testimonial-1.jpg"
 import img2 from "../img/testimonial-2.jpg"
@@ -27,6 +27,7 @@ const testimonials = [
       image:img3
     }
   ];
+  
 const Testimonal = () => {
     const [currentTestimonial, setCurrentTestimonial] = useState(0);
     const handleNextTestimonial = () => {
@@ -36,6 +37,13 @@ const Testimonal = () => {
     const handlePrevTestimonial = () => {
       setCurrentTestimonial(prev => (prev - 1 + testimonials.length) % testimonials.length);
     };
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+       setCurrentTestimonial(prev => (prev + 1) % 3);
+        }, 3000);
+        return () => clearInterval(interval);
+      }, []);
   const context=useOutletContext()
   return (
  <>{/* Testimonials */}
@@ -52,7 +60,7 @@ const Testimonal = () => {
              <img 
                src={testimonials[currentTestimonial].image} 
                alt={testimonials[currentTestimonial].name} 
-               className="rounded-full mx-auto w-24 h-24"
+               className="rounded-full mx-auto w-30 h-30"
              />
              <div className="absolute top-full left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex items-center justify-center bg-white rounded-full shadow-md" style={{ width: '60px', height: '60px' }}>
                <MessageCircle size={24} className="text-blue-600" />
@@ -63,7 +71,7 @@ const Testimonal = () => {
            <h5 className="font-bold">{testimonials[currentTestimonial].name}</h5>
            <span>{testimonials[currentTestimonial].profession}</span>
          </div>
-         <button 
+         {/* <button 
            className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-200 rounded-full p-2"
            onClick={handlePrevTestimonial}
          >
@@ -78,7 +86,7 @@ const Testimonal = () => {
            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
            </svg>
-         </button>
+         </button> */}
        </div>
      </div>
    </div>
