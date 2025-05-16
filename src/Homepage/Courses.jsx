@@ -1,7 +1,7 @@
 import React from 'react'
 import course1 from "../img/courses-1.jpg"
 import course2 from "../img/courses-2.jpg"
-import course3 from "../img/newbike.jpg"
+import course3 from "../img/new-bike1.jpg"
 import { Phone, MapPin, Clock, ArrowRight, Facebook, Twitter, Linkedin, Instagram, ChevronDown, ChevronLeft, ChevronRight } from "lucide-react";
 import { useOutletContext } from 'react-router-dom';
 
