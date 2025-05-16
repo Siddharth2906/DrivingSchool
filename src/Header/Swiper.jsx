@@ -40,7 +40,7 @@ useEffect(() => {
                 <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-b from-[rgba(255,255,255,0)] to-[rgba(0,0,255,0.5)]">
                   <div className="text-center text-white px-4">
                     <h1 className="text-4xl md:text-6xl font-bold mb-5 animate-fadeInDown">
-                      Learn To Drive With Confidence
+                 Female-to-Female Driving Training Available
                     </h1>
                     <div>
                       <a href="#" className="inline-block bg-blue-600 text-white py-3 px-5 rounded">Learn More</a>
