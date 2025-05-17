@@ -32,7 +32,8 @@ const {darkMode , toggleDarkMode} = settheme()
    <Navbar darkMode={darkMode} toggleDarkMode={toggleDarkMode}/>
    <div className={`${darkMode ? 'bg-gray-900 text-white' : 'bg-white text-gray-900'}`}>
   <Outlet context={{darkMode}}/>
- </div>
+  
+   </div>
  <Footer darkMode={darkMode} />
 {/* <WhatsAppFormSubmission/> */}
 

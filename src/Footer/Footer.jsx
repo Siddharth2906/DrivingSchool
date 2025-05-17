@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { ChevronUp, MapPin, Clock, Phone, Facebook, Twitter, Linkedin, Instagram, Check, MessageCircle ,ArrowRight} from 'lucide-react';
+import { ChevronUp, MapPin,ArrowDown, Clock, Phone, Facebook, Twitter, Linkedin, Instagram, Check, MessageCircle ,ArrowRight} from 'lucide-react';
 import logo from "../img/Logo1.png"
 import { Link, useOutletContext } from 'react-router-dom';
 
@@ -9,24 +9,11 @@ const Footer = ({darkMode}) => {
         alert("Thank you for subscribing!");
         setEmail("");
       };
-
+  
   return (
   <>
-   <section className="py-16 bg-blue-400">
-        <div className="container mx-auto px-4">
-          <div className="flex flex-col md:flex-row items-center justify-between">
-            <div className="mb-6 md:mb-0">
-              <h2 className="text-3xl font-bold text-white">Ready to Get Started?</h2>
-              <p className="text-white text-opacity-90 mt-2">
-                Sign up today and start your journey to becoming a confident driver!
-              </p>
-            </div>
-            <Link to="/contact-us" className="bg-white hover:bg-gray-100 text-gray-800 font-bold py-3 px-8 rounded inline-flex items-center">
-              Contact Us Now <ArrowRight size={16} className="ml-2" />
-            </Link>
-          </div>
-        </div>
-      </section>
+        
+
   <footer className={`${darkMode ? 'bg-gray-900 text-white' : 'bg-white text-gray-900'} text-gray py-12`}>
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
@@ -77,9 +64,9 @@ const Footer = ({darkMode}) => {
             <div>
               <h3 className="font-bold text-lg mb-4">Quick Links</h3>
               <ul className="space-y-2">
-                <li><a href="#" className="hover:text-blue-400">About Us</a></li>
-                <li><a href="#" className="hover:text-blue-400">Contact Us</a></li>
-                <li><a href="#" className="hover:text-blue-400">Our Services</a></li>
+                <li><a  className="hover:text-blue-400" onClick={() => document.getElementById('about').scrollIntoView({ behavior: 'smooth' })}>About Us</a></li>
+                <li><a  className="hover:text-blue-400" onClick={() => document.getElementById('contact-us').scrollIntoView({ behavior: 'smooth' })}>Contact Us</a></li>
+                <li><a  className="hover:text-blue-400" onClick={() => document.getElementById('courses').scrollIntoView({ behavior: 'smooth' })}>Our Courses</a></li>
                 <li><a href="#" className="hover:text-blue-400">Terms & Condition</a></li>
                 <li><a href="#" className="hover:text-blue-400">Support</a></li>
               </ul>

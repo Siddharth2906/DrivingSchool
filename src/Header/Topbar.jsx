@@ -28,12 +28,8 @@ function Topbar() {
                 <a href="#" className="flex items-center justify-center h-8 w-8 border-r border-gray-700 text-gray-400 hover:text-blue-600">
                   <Facebook size={14} />
                 </a>
-                <a href="#" className="flex items-center justify-center h-8 w-8 border-r border-gray-700 text-gray-400 hover:text-blue-600">
-                  <Twitter size={14} />
-                </a>
-                <a href="#" className="flex items-center justify-center h-8 w-8 border-r border-gray-700 text-gray-400 hover:text-blue-600">
-                  <Linkedin size={14} />
-                </a>
+               
+               
                 <a href="#" className="flex items-center justify-center h-8 w-8 text-gray-400 hover:text-blue-600">
                   <Instagram size={14} />
                 </a>

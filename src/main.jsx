@@ -21,8 +21,7 @@ const react = createBrowserRouter([
             path: '/',
             element: <HeadPage/>,
           },
-          
-          {
+                  {
             path: '/our-team',
             element: <MainTeam/>,
           },

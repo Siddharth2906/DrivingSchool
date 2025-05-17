@@ -27,17 +27,7 @@ const Team = () => {
           <div className="relative">
             <img src={member.image} alt={member.name} className="w-full" />
             <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-b from-[rgba(255,255,255,0)] to-[rgba(0,0,255,0.5)] bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity">
-              <div className="flex space-x-2">
-                <a href="#" className="border-2 border-blue-600 p-2 hover:bg-blue-600 transition-colors">
-                  <Facebook size={16} className="text-white" />
-                </a>
-                <a href="#" className="border-2 border-blue-600 p-2 hover:bg-blue-600 transition-colors">
-                  <Twitter size={16} className="text-white" />
-                </a>
-                <a href="#" className="border-2 border-blue-600 p-2 hover:bg-blue-600 transition-colors">
-                  <Instagram size={16} className="text-white" />
-                </a>
-              </div>
+              
             </div>
           </div>
           <div className={` ${context.darkMode ? 'bg-gray-500 text-white' : 'bg-white text-gray-900'} text-center p-4`}>

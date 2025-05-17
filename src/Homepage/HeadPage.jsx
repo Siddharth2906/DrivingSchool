@@ -8,6 +8,8 @@ import DrivingTrainingAnimation from './DrivingTrainingAnimation'
 import Team from './Team'
 import Testimonal from './Testimonal'
 import { useOutletContext } from 'react-router-dom'
+import WhatsAppFormSubmission from './ContactUs'
+import ContactSection from './ContactUs'
 
 const HeadPage = () => {
  const context =useOutletContext();
@@ -21,6 +23,7 @@ const HeadPage = () => {
  <DrivingTrainingAnimation />
  <Team/>
  <Testimonal/>
+ <ContactSection/>
 
     </>
   )

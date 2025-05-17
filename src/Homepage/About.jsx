@@ -8,7 +8,7 @@ const About = () => {
 //  console.log(context.darkMode)
   return (
    <>{/* About */}
-   <div className={`container mx-auto px-4 py-12 ${context.darkMode ? 'bg-gray-900 text-white' : 'bg-white text-gray-900'} `}>
+   <div id='about' className={`container mx-auto px-4 py-12 ${context.darkMode ? 'bg-gray-900 text-white' : 'bg-white text-gray-900'} `}>
      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
        <div className="relative overflow-hidden pt-5 pl-5" style={{ minHeight: '400px' }}>
          <img src={img2} alt="About" className="absolute w-full h-full object-cover" />

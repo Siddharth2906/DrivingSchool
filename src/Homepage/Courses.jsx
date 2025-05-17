@@ -47,7 +47,7 @@ const Courses = () => {
   
   
       {/* Courses */}
-      <div  className={`container mx-auto px-4 py-12 ${context.darkMode ? 'bg-gray-900 text-white' : 'bg-white text-gray-900'} `}>
+      <div id='courses'  className={`container mx-auto px-4 py-12 ${context.darkMode ? 'bg-gray-900 text-white' : 'bg-white text-gray-900'} `}>
         <div className="text-center max-w-lg mx-auto mb-8">
           <h6 className="text-blue-600 font-bold uppercase mb-2">Trending Courses</h6>
           <h1 className="text-3xl md:text-4xl font-bold mb-4">Our Courses Upskill You With Driving Training</h1>
@@ -82,10 +82,8 @@ const Courses = () => {
               </div>
               <div className="relative mt-auto">
                 <img src={course.image} alt={course.title} className="w-full " style={{ maxHeight: '400px' }}/>
-                <div className="absolute inset-0 bg-gradient-to-b from-[rgba(255,255,255,0)] to-[rgba(0,0,255,0.5)] bg-opacity-40 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity">
-                  <a href="#" className="border-2 border-white text-white py-2 px-4 rounded hover:bg-white hover:text-gray-800 transition-colors">
-                    Read More
-                  </a>
+                <div className="absolute inset-0 bg-gradient-to-b from-[rgba(255,255,255,0)] to-[rgba(0,0,255,0.5)] bg-opacity-40 flex flex-col items-center justify-center flex-row opacity-0 hover:opacity-100 transition-opacity">
+                  
                 </div>
               </div>
             </div>

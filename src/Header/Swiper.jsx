@@ -18,11 +18,11 @@ useEffect(() => {
    {/* Carousel */}
    <div className="relative">
         <div className="overflow-hidden">
-          <div className="relative w-full transition-transform duration-700 ease-in-out" 
+          <div className="relative  w-full h-130 transition-transform duration-700 ease-in-out" 
                style={{ transform: `translateX(-${currentSlide * 100}%)` }}>
             <div className="flex">
               <div className="min-w-full relative">
-                <img src={img1} alt="Carousel Image" className="w-full object-cover" />
+                <img src={img1} alt="Carousel Image" className="w-full h-130 object-cover" />
                 <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-b from-[rgba(255,255,255,0)] to-[rgba(0,0,255,0.5)]">
                   <div className="text-center text-white px-4">
                     <h1 className="text-4xl md:text-6xl font-bold mb-5 animate-fadeInDown">
@@ -36,7 +36,7 @@ useEffect(() => {
                 </div>
               </div>
               <div className="min-w-full relative">
-                <img src={img3} alt="Carousel Image" className="w-full object-cover" />
+                <img src={img3} alt="Carousel Image" className=" w-full h-130 object-cover" />
                 <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-b from-[rgba(255,255,255,0)] to-[rgba(0,0,255,0.5)]">
                   <div className="text-center text-white px-4">
                     <h1 className="text-4xl md:text-6xl font-bold mb-5 animate-fadeInDown">
@@ -50,7 +50,7 @@ useEffect(() => {
                 </div>
               </div>
               <div className="min-w-full relative">
-                <img src={img2} alt="Carousel Image" className="w-full object-cover" />
+                <img src={img2} alt="Carousel Image" className="w-full h-130 object-cover" />
                 <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-b from-[rgba(255,255,255,0)] to-[rgba(0,0,255,0.5)]">
                   <div className="text-center text-white px-4">
                     <h1 className="text-4xl md:text-6xl font-bold mb-5 animate-fadeInDown">

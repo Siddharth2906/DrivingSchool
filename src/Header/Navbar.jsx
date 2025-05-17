@@ -51,26 +51,12 @@ const Navbar = ( {darkMode,toggleDarkMode}) => {
            
             <div className={`${isNavOpen ? 'block' : 'hidden'} ${darkMode ? ' bg-gray-900 text-white' : 'bg-white text-gray-900'} lg:flex lg:items-center absolute lg:static top-full left-0 right-0  lg:bg-transparent shadow-md lg:shadow-none`}>
               <div className="flex flex-col lg:flex-row p-4 lg:p-0">
-                <Link to="/" className='py-2 px-4 lg:px-4 hover:text-blue-800'>Home</Link>
-             <Link to="/about" className='py-2 px-4 lg:px-4 hover:text-blue-800'>About</Link>
-             <Link to="/courses" className='py-2 px-4 lg:px-4 hover:text-blue-800'>Courses</Link>
-               
-                <div className="relative group py-2 px-4 lg:px-4">
-                  <a href="#" className=" hover:text-blue-600 flex items-center">
-                    Pages
-                    <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                    </svg>
-                  </a>
-                  <div className={`hidden group-hover:block absolute left-0 mt-2 ${darkMode ? ' bg-gray-900 text-white' : 'bg-white text-gray-900'} shadow-lg rounded-sm z-10 w-40`}>
-                    <Link to="/features" className={`block px-4 py-2 ${darkMode ? '  text-white  hover:bg-gray-600 ' : 'text-gray-700 hover:bg-gray-100'}`}>Features</Link>
-                    <Link to="/contact-us" className={`block px-4 py-2 ${darkMode ? '  text-white  hover:bg-gray-600 ' : 'text-gray-700 hover:bg-gray-100'}`}>Appointment</Link>
-                    <Link to="/our-team" className={`block px-4 py-2 ${darkMode ? '  text-white  hover:bg-gray-600 ' : 'text-gray-700 hover:bg-gray-100'}`}>Our Team</Link>
-                    <Link to="/testimonal" className={`block px-4 py-2 ${darkMode ? '  text-white  hover:bg-gray-600 ' : 'text-gray-700 hover:bg-gray-100'}`}>Testimonal</Link>
-                    <Link to="/company" className={`block px-4 py-2 ${darkMode ? '  text-white  hover:bg-gray-600 ' : 'text-gray-700 hover:bg-gray-100'}`}>404 Page</Link>
-                  </div>
-                </div>
-                <Link to="/contact-us" className='py-2 px-4 lg:px-4 hover:text-blue-800'>Contact</Link>
+                <Link to="/" className='py-2 px-4 lg:px-4 hover:text-blue-800' >Home</Link>
+             <Link  className='py-2 px-4 lg:px-4 hover:text-blue-800' onClick={() => document.getElementById('about').scrollIntoView({ behavior: 'smooth' })}>About</Link>
+             <Link className='py-2 px-4 lg:px-4 hover:text-blue-800' onClick={() => document.getElementById('courses').scrollIntoView({ behavior: 'smooth' })}>Courses</Link>
+  
+          
+                <Link className='py-2 px-4 lg:px-4 hover:text-blue-800'  onClick={() => document.getElementById('contact-us').scrollIntoView({ behavior: 'smooth' })} >Contact</Link>
               </div>
             </div>
             
