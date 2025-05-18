@@ -1,65 +1,69 @@
 import React from 'react'
-import course1 from "../img/courses-1.jpg"
-import course2 from "../img/courses-2.jpg"
-import course3 from "../img/new-bike1.jpg"
+import course1 from "../img/activa.jpg"
+import course2 from "../img/car.jpg"
+import course3 from "../img/bike.jpg"
 import { Phone, MapPin, Clock, ArrowRight, Facebook, Twitter, Linkedin, Instagram, ChevronDown, ChevronLeft, ChevronRight } from "lucide-react";
 import { useOutletContext } from 'react-router-dom';
 
 const courses = [
-    {
-      id: 1,
-      title: "Automatic Car Lessons",
-      price: "360 rupees",
-      description: "Learn to drive without the stress of gear shifting. Our automatic car lessons are perfect for beginners and those who prefer a smooth, hassle-free driving experience",
-      level: "Beginner",
-      duration: "10 days",
-      adv_level:"Advanced",
-      adv_duration:"20 days",
-      image: course1
-    },
-    {
-      id: 2,
-      title: "Highway Driving Lesson",
-      price: "360 rupees",
-      description: "Gain confidence driving at higher speeds and managing traffic on highways. Our expert instructors will train you on safe lane changing, overtaking, and long-distance driving.",
-      level: "Beginner",
-      duration: '10 days',
-       adv_level:"Advanced",
-      adv_duration:"20 days",
-      image: course2
-    },
-    {
-      id: 3,
-      title: "Activa & Bike Driving lesson",
-      price: "360 rupees",
-      description: "New to two-wheelers? We provide step-by-step training for riding scooters (scooty) and motorbikes, focusing on balance, safety, and road awareness for urban and rural roads.",
-      level: "Beginner",
-      duration: "10 days",
-      adv_level:"Advanced",
-      adv_duration:"20 days",
-      image: course3
-    }
-  ];
+  {
+    id: 1,
+    title: "Activa & Scooty Riding Lesson",
+    price: "360 rupees",
+    description: "Learn to drive without the stress of gear shifting. Our automatic car lessons are perfect for beginners and those who prefer a smooth, hassle-free driving experience",
+    level: "Foundation Ride",
+    duration: "10 days",
+    adv_level: "Progressive Ride",
+    adv_duration: "20 days",
+    price: "Not Disclosed",
+    image: course1
+  },
+  {
+    id: 2,
+    title: "Car Diriving Lesson",
+    price: "360 rupees",
+    description: "Gain confidence driving at higher speeds and managing traffic on highways. Our expert instructors will train you on safe lane changing, overtaking, and long-distance driving.",
+    level: "Foundation Drive",
+    duration: '10 days',
+    adv_level: "Progressive Drive",
+    adv_duration: "20 days",
+    price: "Not Disclosed",
+    image: course2
+  },
+  {
+    id: 3,
+    title: "Bike Riding Lesson",
+    price: "360 rupees",
+    description: "Master two-wheelers with ease — we offer guided training for scooters and motorcycles, focusing on control, safety, and real-world traffic skills.",
+    level: "Foundation Ride",
+    duration: "10 days",
+    adv_level: "Progressive Ride",
+    adv_duration: "20 days",
+    price: "Not Disclosed",
+    image: course3
+  }
+];
 const Courses = () => {
-   const context =useOutletContext();
+  const context = useOutletContext();
   return (
-  <>
-  
-  
+    <>
+
+
       {/* Courses */}
-      <div id='courses'  className={`container mx-auto px-4 py-12 ${context.darkMode ? 'bg-gray-900 text-white' : 'bg-white text-gray-900'} `}>
+      <div id='courses' className={`container mx-auto px-4 py-12 ${context.darkMode ? 'bg-gray-900 text-white' : 'bg-white text-gray-900'} `}>
         <div className="text-center max-w-lg mx-auto mb-8">
           <h6 className="text-blue-600 font-bold uppercase mb-2">Trending Courses</h6>
-          <h1 className="text-3xl md:text-4xl font-bold mb-4">Our Courses Upskill You With Driving Training</h1>
+          <h1 className="text-3xl md:text-4xl font-bold mb-4">Our Driving Courses</h1>
         </div>
         <div className="grid grid-cols-1  md:grid-cols-3 gap-6">
           {courses.map(course => (
             <div key={course.id} className={`${context.darkMode ? 'bg-gray-900 text-white' : 'bg-white text-gray-900'} rounded-xl p-6 shadow-lg shadow-blue-500/10 border border-gray-700 hover:shadow-blue-500/20 transition-all duration-300 flex flex-col h-full overflow-hidden`}>
               <div className="text-center p-4 pt-0">
-                
+
                 <h5 className="text-xl font-bold mb-3">{course.title}</h5>
                 <p>{course.description}</p>
-                <div className="flex justify-center mt-2 mb-2">
+                <div className="flex justify-center mt-3 mb-3">
+
                   <div className="flex items-center mr-4">
                     <i className="fas fa-signal text-blue-600 mr-2"></i>
                     <small>{course.level}</small>
@@ -68,7 +72,12 @@ const Courses = () => {
                     <i className="fas fa-calendar-alt text-blue-600 mr-2"></i>
                     <small>{course.duration}</small>
                   </div>
+                  {/* <div className="flex items-center">
+                    <i className="fas fa-rupee-sign text-green-600 mr-2"></i>
+                    <small>{course.price}</small>
+                  </div> */}
                 </div>
+
                 <div className="flex justify-center mt-2 mb-0">
                   <div className="flex items-center mr-4">
                     <i className="fas fa-signal text-red-600 mr-2"></i>
@@ -78,12 +87,16 @@ const Courses = () => {
                     <i className="fas fa-calendar-alt text-red-600 mr-2"></i>
                     <small>{course.adv_duration}</small>
                   </div>
+                  {/* <div className="flex items-center">
+                    <i className="fas fa-rupee-sign text-green-600 mr-2"></i>
+                    <small>{course.price}</small>
+                  </div> */}
                 </div>
               </div>
               <div className="relative mt-auto">
-                <img src={course.image} alt={course.title} className="w-full " style={{ maxHeight: '400px' }}/>
+                <img src={course.image} alt={course.title} className="w-full " style={{ maxHeight: '400px' }} />
                 <div className="absolute inset-0 bg-gradient-to-b from-[rgba(255,255,255,0)] to-[rgba(0,0,255,0.5)] bg-opacity-40 flex flex-col items-center justify-center flex-row opacity-0 hover:opacity-100 transition-opacity">
-                  
+
                 </div>
               </div>
             </div>
@@ -130,7 +143,7 @@ const Courses = () => {
           </div>
         </div> */}
       </div>
-  </>
+    </>
   )
 }
 

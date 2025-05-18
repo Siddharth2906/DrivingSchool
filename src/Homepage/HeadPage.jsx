@@ -19,8 +19,9 @@ const HeadPage = () => {
  <Facts/>
  <Features/>
  <About/>
- <Courses/>
  <DrivingTrainingAnimation />
+ <Courses/>
+ 
  <Team/>
  <Testimonal/>
  <ContactSection/>

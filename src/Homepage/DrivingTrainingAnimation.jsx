@@ -70,7 +70,7 @@ const context =useOutletContext();
             showSpecialBanner ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
           }`}
         >
-          <h2 className="text-2xl font-bold animate-pulse">!! Special Offer !!</h2>
+          <h2 className="text-2xl font-bold animate-pulse">!! Special Services !!</h2>
         </div>
         
         {/* Main content with staged animations */}
@@ -87,7 +87,7 @@ const context =useOutletContext();
             <p className={`mt-4 text-gray-600 font-bold max-w-2xl mx-auto transition-all duration-700 ${
               animationStage >= 1 ? 'opacity-100' : 'opacity-0'
             }`}>
-              We're proud to offer exclusive ladies-only training sessions with female trainers in our dedicated facility.
+              We're proud to Services exclusive ladies-only training sessions with female trainers in our dedicated facility.
             </p>
           </div>
           

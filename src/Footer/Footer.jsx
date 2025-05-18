@@ -43,11 +43,11 @@ const Footer = ({darkMode}) => {
               <h3 className="font-bold text-lg mb-4">Contact Us</h3>
               <div className="flex items-start mb-3">
                 <MapPin size={18} className="mr-3 mt-1 flex-shrink-0" />
-                <span>123 Street, Sukliya, Indore</span>
+                <span>53, Sethi Sambandh Nagar MR 9 Road near by Sai Sampada, Indore</span>
               </div>
               <div className="flex items-center mb-3">
                 <Phone size={18} className="mr-3 flex-shrink-0" />
-                <span>+012 345 6789</span>
+                <span>+91 6266774711, +91 9893682072</span>
               </div>
               <div className="flex items-center mb-3">
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-3 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">

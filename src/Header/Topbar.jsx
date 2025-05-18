@@ -12,7 +12,7 @@ function Topbar() {
             <div className="flex">
               <div className="flex items-center mr-4">
                 <MapPin size={14} className="text-blue-600 mr-2" />
-                <small>123 Street, Sukliya, Indore</small>
+                <small>53, Sethi Sambandh Nagar MR 9 Road, Indore</small>
               </div>
               <div className="flex items-center">
                 <Clock size={14} className="text-blue-600 mr-2" />
@@ -21,8 +21,8 @@ function Topbar() {
             </div>
             <div className="flex">
               <div className="flex items-center mr-4">
-                <Phone size={14} className="text-blue-600 mr-2" />
-                <small>+012 345 6789</small>
+                <Phone size={11} className="text-blue-600 mr-2" />
+                <small>+91 6266774711, +91 9893682072 </small>
               </div>
               <div className="flex">
                 <a href="#" className="flex items-center justify-center h-8 w-8 border-r border-gray-700 text-gray-400 hover:text-blue-600">

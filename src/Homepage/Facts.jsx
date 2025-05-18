@@ -7,19 +7,19 @@ const facts = [
     id: 1,
     icon: "car",
     title: "Easy Driving Learn",
-    description: "Clita erat ipsum lorem sit sed stet duo justo erat amet"
+    description: "Start confidently with beginner-friendly, structured lessons."
   },
   {
     id: 2,
     icon: "users",
-    title: "National Instructor",
-    description: "Clita erat ipsum lorem sit sed stet duo justo erat amet"
+    title: "Personal Instructor",
+    description: "Learn safe and responsible driving from skilled instructors."
   },
   {
     id: 3,
     icon: "file-alt",
-    title: "Get licence",
-    description: "Clita erat ipsum lorem sit sed stet duo justo erat amet"
+    title: "Female-Friendly Learning",
+    description: "Learn with comfort – female instructors available on request."
   }
 ];
 const Facts = () => {

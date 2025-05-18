@@ -120,7 +120,7 @@ const ContactSection = () => {
       );
       
       // Phone number format for WhatsApp (without +)
-      const phoneNumber = +919174187184
+      const phoneNumber = +916266774711
       // After timeout to show loading state (can be replaced with actual API call)
       setTimeout(() => {
         setIsSubmitting(false);

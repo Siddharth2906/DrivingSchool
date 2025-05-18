@@ -22,15 +22,15 @@ useEffect(() => {
                style={{ transform: `translateX(-${currentSlide * 100}%)` }}>
             <div className="flex">
               <div className="min-w-full relative">
-                <img src={img1} alt="Carousel Image" className="w-full h-130 object-cover" />
+                <img src={img1} alt="Carousel Image" className="w-full h-140 object-cover" />
                 <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-b from-[rgba(255,255,255,0)] to-[rgba(0,0,255,0.5)]">
                   <div className="text-center text-white px-4">
                     <h1 className="text-4xl md:text-6xl font-bold mb-5 animate-fadeInDown">
                       Learn To Drive With Confidence
                     </h1>
                     <div>
-                      <a href="#" className="inline-block bg-blue-600 text-white py-3 px-5 rounded">Learn More</a>
-                      <a href="#" className="inline-block bg-white text-gray-800 py-3 px-5 rounded ml-3">Our Courses</a>
+                      {/* <a href="#" className="inline-block bg-blue-600 text-white py-3 px-5 rounded">Learn More</a>
+                      <a href="#" className="inline-block bg-white text-gray-800 py-3 px-5 rounded ml-3">Our Courses</a> */}
                     </div>
                   </div>
                 </div>
@@ -40,11 +40,11 @@ useEffect(() => {
                 <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-b from-[rgba(255,255,255,0)] to-[rgba(0,0,255,0.5)]">
                   <div className="text-center text-white px-4">
                     <h1 className="text-4xl md:text-6xl font-bold mb-5 animate-fadeInDown">
-                 Female-to-Female Driving Training Available
+                     Female-to-Female Driving Training Available
                     </h1>
                     <div>
-                      <a href="#" className="inline-block bg-blue-600 text-white py-3 px-5 rounded">Learn More</a>
-                      <a href="#" className="inline-block bg-white text-gray-800 py-3 px-5 rounded ml-3">Our Courses</a>
+                      {/* <a href="#" className="inline-block bg-blue-600 text-white py-3 px-5 rounded">Learn More</a>
+                      <a href="#" className="inline-block bg-white text-gray-800 py-3 px-5 rounded ml-3">Our Courses</a> */}
                     </div>
                   </div>
                 </div>
@@ -57,8 +57,8 @@ useEffect(() => {
                       Safe Driving Is Our Top Priority
                     </h1>
                     <div>
-                      <a href="#" className="inline-block bg-blue-600 text-white py-3 px-5 rounded">Learn More</a>
-                      <a href="#" className="inline-block bg-white text-gray-800 py-3 px-5 rounded ml-3">Our Courses</a>
+                      {/* <a href="#" className="inline-block bg-blue-600 text-white py-3 px-5 rounded">Learn More</a>
+                      <a href="#" className="inline-block bg-white text-gray-800 py-3 px-5 rounded ml-3">Our Courses</a> */}
                     </div>
                   </div>
                 </div>
