@@ -1,32 +1,54 @@
 import React, { useEffect, useState } from 'react'
 import { ChevronUp, MapPin, Clock, Phone, Facebook, Twitter, Linkedin, Instagram, Check, MessageCircle } from 'lucide-react';
-import img1 from "../img/testimonial-1.jpg"
-import img2 from "../img/testimonial-2.jpg"
-import img3 from "../img/testimonial-3.jpg"
+import img1 from "../img/user.png"
+import img2 from "../img/user.png"
+import img3 from "../img/user.png"
 import { useOutletContext } from 'react-router-dom';
 const testimonials = [
-    {
-      id: 1,
-      content: "I had an excellent experience with Priyanshi Driving School ! The instructors were patient, professional, and extremely knowledgeable.",
-      name: "Client Name",
-      profession: "Profession",
-      image: img1
-    },
-    {
-      id: 2,
-      content: "What I appreciated most was how they tailored the lessons to my learning pace. The cars were clean and well-maintained, and scheduling classes was easy and flexible. ",
-      name: "Client Name",
-      profession: "Profession",
-      image: img2
-    },
-    {
-      id: 3,
-      content: "I highly recommend Priyanshi Driving School to anyone looking to learn how to drive safely and confidently. Thank you for making this journey so smooth and enjoyable!",
-      name: "Client Name",
-      profession: "Profession",
-      image:img3
-    }
-  ];
+  {
+    id: 1,
+    content: "I had an excellent experience with Priyanshi Driving School! The instructors were patient, professional, and extremely knowledgeable.",
+    name: "Aarav Mehta",
+    profession: "Student",
+    image: img1
+  },
+  {
+    id: 2,
+    content: "What I appreciated most was how they tailored the lessons to my learning pace. The cars were clean and well-maintained, and scheduling classes was easy and flexible.",
+    name: "Ritika Sharma",
+    profession: "Graphic Designer",
+    image: img2
+  },
+  {
+    id: 3,
+    content: "I highly recommend Priyanshi Driving School to anyone looking to learn how to drive safely and confidently. Thank you for making this journey so smooth and enjoyable!",
+    name: "Vikram Patel",
+    profession: "Software Engineer",
+    image: img3
+  },
+  {
+    id: 4,
+    content: "Learning to drive felt intimidating at first, but the instructors made it incredibly comfortable and fun. I passed my test on the first try!",
+    name: "Sneha Joshi",
+    profession: "College Student",
+    image: img1
+  },
+  {
+    id: 5,
+    content: "The classroom sessions were informative and well-structured. I especially liked how road safety and real-world scenarios were explained clearly.",
+    name: "Rahul Verma",
+    profession: "Bank Officer",
+    image: img1
+  },
+  {
+    id: 6,
+    content: "My instructor was always punctual and had a calm demeanor, which helped ease my nervousness. I’m now a confident driver thanks to them!",
+    name: "Neha Kapoor",
+    profession: "Entrepreneur",
+    image: img1
+  }
+];
+
   
 const Testimonal = () => {
     const [currentTestimonial, setCurrentTestimonial] = useState(0);
