@@ -1,13 +1,13 @@
 import React from 'react'
 import { ChevronUp, MapPin, Clock, Phone, Facebook, Twitter, Linkedin, Instagram, Check, MessageCircle } from 'lucide-react';
-import img1 from "../img/team-1.jpg"
+import img1 from "../img/girl.jpg"
 import img2 from "../img/team-2.jpg"
 import img3 from "../img/team-3.jpg"
 import img4 from "../img/team-4.jpg"
 import { useOutletContext } from 'react-router-dom';
 const teamMembers = [
     { id: 1, name: "Vandana Shakay", position: "Trainer", image: img1 },
-    { id: 2, name: "Deepali Shakay", position: "Trainer", image: img2 },
+    { id: 2, name: "Deepali Shakay", position: "Trainer", image: img1 },
   ];
   
 const Team = () => {
@@ -19,7 +19,7 @@ const Team = () => {
       <h6 className="text-blue-600 font-bold uppercase mb-2">Meet The Team</h6>
       <h1 className="text-3xl md:text-4xl font-bold mb-4">We Have Great Experience Of Driving</h1>
     </div>
-    <div className="  max-w-4xl mx-auto md:flex justify-center gap-10 rounded-xl p-6 shadow-lg shadow-blue-500/10 border border-gray-700 hover:shadow-blue-500/20 transition-all duration-300">
+    <div className="  max-w-2xl mx-auto md:flex justify-center gap-10 rounded-xl p-6 shadow-lg shadow-blue-500/10 border border-gray-700 hover:shadow-blue-500/20 transition-all duration-300">
       {teamMembers.map(member => (
         <div key={member.id} className="relative group p-2">
           <div className="relative">
