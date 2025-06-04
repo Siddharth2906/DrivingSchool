@@ -8,11 +8,10 @@ const ContactSection = () => {
   // Available services for dropdown
   const services = [
     "Select a course type",
-    "Automatic License",
-    "Manual License",
-    "Refresher Course",
-    "Defensive Driving",
-    "Highway Confidence"
+    "Activa",
+    "Car",
+    "Bike",
+    
   ];
 
   // Form state
