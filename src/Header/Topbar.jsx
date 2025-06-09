@@ -30,7 +30,7 @@ function Topbar() {
                 </a>
                
                
-                <a href="#" className="flex items-center justify-center h-8 w-8 text-gray-400 hover:text-blue-600">
+                <a href="https://www.instagram.com/vandana_cilogiya?utm_source=qr&igsh=MTJ1OGt0N3dscHZsNQ==" className="flex items-center justify-center h-8 w-8 text-gray-400 hover:text-blue-600">
                   <Instagram size={14} />
                 </a>
               </div>
