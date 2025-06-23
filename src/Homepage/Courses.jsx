@@ -1,7 +1,7 @@
 import React from 'react'
-import course1 from "../img/activa.jpg"
-import course2 from "../img/car.jpg"
-import course3 from "../img/bike.jpg"
+import course1 from "../img/1.png"
+import course2 from "../img/new44.png"
+import course3 from "../img/pulsar1.png"
 import { Phone, MapPin, Clock, ArrowRight, Facebook, Twitter, Linkedin, Instagram, ChevronDown, ChevronLeft, ChevronRight } from "lucide-react";
 import { useOutletContext } from 'react-router-dom';
 
@@ -94,7 +94,7 @@ const Courses = () => {
                 </div>
               </div>
               <div className="relative mt-auto">
-                <img src={course.image} alt={course.title} className="w-full " style={{ maxHeight: '400px' }} />
+                <img src={course.image} alt={course.title} className=" w-full  " style={{ maxHeight: '300px' }} />
                 <div className="absolute inset-0 bg-gradient-to-b from-[rgba(255,255,255,0)] to-[rgba(0,0,255,0.5)] bg-opacity-40 flex flex-col items-center justify-center flex-row opacity-0 hover:opacity-100 transition-opacity">
 
                 </div>
