@@ -16,7 +16,10 @@ const HeadPage = () => {
  const context =useOutletContext();
   return (
     <>
-    <SEO/>
+    <SEO
+    title="Best Driving School in Indore | Ladies Car & Scooty Classes"
+    description="Join Priyanshi Driving School – Indore’s trusted ladies-to-ladies driving classes. Learn car, scooty, bike & activa from expert female instructors."
+    />
    <Swiper/>
  <Facts/>
  <Features/>
