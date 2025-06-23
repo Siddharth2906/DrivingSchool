@@ -10,11 +10,13 @@ import Testimonal from './Testimonal'
 import { useOutletContext } from 'react-router-dom'
 import WhatsAppFormSubmission from './ContactUs'
 import ContactSection from './ContactUs'
+import SEO from '../seo/SEO'
 
 const HeadPage = () => {
  const context =useOutletContext();
   return (
     <>
+    <SEO/>
    <Swiper/>
  <Facts/>
  <Features/>
