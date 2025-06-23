@@ -39,7 +39,7 @@ const Footer = ({darkMode}) => {
               </div>
             
               <div className="flex space-x-3">
-                <a href="#" className={`${darkMode ? 'bg-gray-900 text-white' : 'bg-white text-gray-900'}  bg-opacity-20 p-2 rounded hover:bg-opacity-30`}>
+                <a href="https://www.facebook.com/people/Priyanshi-Driving-School-Indore/61576753785088/?rdid=D9lqur5c79DeKHp5&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F152D9RLXjs%2F" className={`${darkMode ? 'bg-gray-900 text-white' : 'bg-white text-gray-900'}  bg-opacity-20 p-2 rounded hover:bg-opacity-30`}>
                   <Facebook size={18} />
                 </a>
                 <a href="https://www.instagram.com/vandana_cilogiya?utm_source=qr&igsh=MTJ1OGt0N3dscHZsNQ==" className={`${darkMode ? 'bg-gray-900 text-white' : 'bg-white text-gray-900'}  bg-opacity-20 p-2 rounded hover:bg-opacity-30`}>
