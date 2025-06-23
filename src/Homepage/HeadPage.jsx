@@ -10,11 +10,16 @@ import Testimonal from './Testimonal'
 import { useOutletContext } from 'react-router-dom'
 import WhatsAppFormSubmission from './ContactUs'
 import ContactSection from './ContactUs'
+import SEO from '../seo/SEO'
 
 const HeadPage = () => {
  const context =useOutletContext();
   return (
     <>
+    <SEO
+    title="Best Driving School in Indore | Ladies Car & Scooty Classes"
+    description="Join Priyanshi Driving School – Indore’s trusted ladies-to-ladies driving classes. Learn car, scooty, bike & activa from expert female instructors."
+    />
    <Swiper/>
  <Facts/>
  <Features/>
