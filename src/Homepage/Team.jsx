@@ -1,9 +1,7 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { ChevronUp, MapPin, Clock, Phone, Facebook, Twitter, Linkedin, Instagram, Check, MessageCircle } from 'lucide-react';
 import img1 from "../img/girl.jpg"
-import img2 from "../img/team-2.jpg"
-import img3 from "../img/team-3.jpg"
-import img4 from "../img/team-4.jpg"
+
 import { useOutletContext } from 'react-router-dom';
 const teamMembers = [
     { id: 1, name: "Vandana Shakay", position: "Trainer", image: img1 },
@@ -11,10 +9,13 @@ const teamMembers = [
   ];
   
 const Team = () => {
+
   const context =useOutletContext();
+  
   return (
   <>  {/* Team */}
   <div className={`container mx-auto px-4 py-12 ${context.darkMode ? 'bg-gray-900 text-white' : 'bg-white text-gray-900'} `}>
+
     <div className="text-center max-w-lg mx-auto mb-8">
       <h6 className="text-blue-600 font-bold uppercase mb-2">Meet The Team</h6>
       <h1 className="text-3xl md:text-4xl font-bold mb-4">We Have Great Experience Of Driving</h1>

@@ -68,7 +68,7 @@ const Footer = ({darkMode}) => {
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-3 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                 </svg>
-                <span>priyanshidrivingschoolindore20@gmail.com</span>
+                <span className='break-all'>priyanshidrivingschoolindore20@gmail.com</span>
               </div>
               <div className="flex items-center">
                 <Clock size={18} className="mr-3 flex-shrink-0" />
@@ -89,7 +89,7 @@ const Footer = ({darkMode}) => {
             
             <div>
                <p className="text-gray-500 mb-4">
-                Providing quality driving education since 2005. We're committed to creating safe and confident drivers.
+                Providing quality driving education since 2023. We're committed to creating safe and confident drivers.
               </p>
             </div>
           </div>
@@ -189,7 +189,7 @@ const Footer = ({darkMode}) => {
                   <h3 className="text-xl font-semibold mb-3 text-gray-800">10. Contact Information</h3>
                   <p className="mb-2">For any questions or concerns regarding these Terms, please contact us at:</p>
                   <div className="bg-gray-50 p-4 rounded-lg space-y-2">
-                    <p className="break-all"><span className="font-semibold ">📧 Email:</span> priyanshidrivingschoolindore20@gmail.com</p>
+                    <p className="break-all"><span className="font-semibold">📧 Email:</span>priyanshidrivingschoolindore20@gmail.com</p>
                     <p><span className="font-semibold">📞 Phone:</span> +91 6266774711, +91 9893682072</p>
                     <p><span className="font-semibold">📍 Address:</span> 53, Sethi Sambandh Nagar MR 9 Road near by Sai Sampada, Indore</p>
                   </div>
