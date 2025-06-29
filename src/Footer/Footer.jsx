@@ -108,11 +108,11 @@ const Footer = ({darkMode}) => {
             
             <div className="popup-message p-6 text-gray-700 leading-relaxed">
               <div className="mb-4">
-                <p className="font-semibold text-lg mb-2">Effective Date: [Insert Date]</p>
+                <p className="font-semibold text-lg mb-2">Effective Date: </p>
                 <p className="mb-4">
                   Welcome to Priyanshi Driving School. By accessing or using our website{' '}
-                  <a href="https://priyanshidrivingschool.netlify.app" className="text-blue-600 hover:underline">
-                    https://priyanshidrivingschool.netlify.app
+                  <a href="https://priyanshidrivingschool.com/" className="text-blue-600 hover:underline">
+                  https://priyanshidrivingschool.com/
                   </a>, you agree to comply with and be bound by the following Terms and Conditions. Please read them carefully.
                 </p>
               </div>
@@ -334,6 +334,10 @@ const Footer = ({darkMode}) => {
       )}
           <div className="border-t border-gray-700 mt-10 pt-6 text-center">
             <p>&copy; {new Date().getFullYear()} Priyanshi Driving School. All Rights Reserved.</p>
+        
+    <p>Developed by Incepta - Digital Branding Program
+
+Indore, M.P. • info.inceptaprogram@gmail.com</p>
           </div>
         </div>
       </footer>
